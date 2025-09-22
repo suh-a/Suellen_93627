@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuário</title>
+    <style>
+        /* ----- Reset e base ----- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: #3ca9e2;
+            color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 2rem;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #ddd;
+            margin: 20px 0;
+        }
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2, h3, h4 {
+            margin-bottom: 10px;
+            color: #3ca9e2;
+        }
+        img {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 6px rgba(0,0,0,0.2);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            width: 100%;
+        }
+        ul {
+            margin: 10px 0 20px 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        input[type="submit"] {
+            background: #3ca9e2;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background: #2d8cc4;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo(a) ao perfil de Bob Esponja</h1>
+    </header>
+
+    <hr>
+
+    <main>
+        <h2>Foto de perfil</h2>
+        <img src="img/foto-perfil.jpg" alt="Foto de perfil" width="400" height="300">
+
+        <h3>Informações básicas</h3>
+        <form action="/submit" method="POST">
+            <!-- Campo de Nome -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" value="Bob Esponja" required>
+
+            <!-- Campo de E-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" value="bob@fenda.com" required>
+
+            <!-- Campo de Data de Nascimento -->
+            <label for="data-nascimento">Data de nascimento:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" value="1999-05-01" required>
+
+            <section>
+                <h4><u>Lista de interesses</u></h4>
+                <ul>
+                    <li>Hambúrguer</li>
+                    <li>Caracol</li>
+                    <li>Águas vivas</li>
+                </ul>
+            </section>
+
+            <!-- Botão de cadastrar -->
+            <input type="submit" value="Editar perfil">
+        </form>
+    </main>
+
+</body>
+</html>
