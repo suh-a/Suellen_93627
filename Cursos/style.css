@@ -1,0 +1,156 @@
+/* Importando fontes do Google Fonts */
+/* 'Poppins' será usada para títulos e destaques, 'Lato' para textos corridos */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+/* Reset simples */
+/* Remove margens e padding padrão do navegador e define box-sizing para facilitar dimensionamento */
+body, h1, h2, h3, p, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Inclui padding e borda dentro da largura e altura do elemento */
+}
+
+/* Body */
+/* Configurações gerais do corpo da página */
+body {
+  font-family: 'Lato', sans-serif; /* Fonte padrão para textos */
+  background-color: #f5f5f5; /* Cor de fundo clara */
+  color: #333; /* Cor padrão do texto */
+  
+}
+
+/* Header */
+/* Estilo da barra superior / cabeçalho */
+header {
+  background: #761e81; /* Cor de fundo roxa */
+  color: white; /* Texto branco */
+  text-align: center; /* Centraliza o texto */
+  padding: 30px 0; /* Espaçamento vertical interno */
+  font-family: 'Poppins', sans-serif; /* Fonte elegante para títulos */
+  font-size: 2.2em; /* Tamanho do texto grande */
+  letter-spacing: 1px; /* Espaço entre letras */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Sombra suave abaixo do header */
+}
+
+/* Seção introdutória */
+.intro {
+  background: #cc71d8; /* Cor de fundo lilás */
+  color: white; /* Texto branco */
+  text-align: center; /* Centraliza o conteúdo */
+  padding: 50px 20px; /* Espaçamento interno */
+  font-family: 'Lato', sans-serif; /* Fonte para textos */
+}
+
+/* Título principal na seção introdutória */
+.intro h2 {
+  font-size: 1.8em; /* Tamanho grande */
+  margin-bottom: 15px; /* Espaço abaixo do título */
+  font-weight: 700; /* Negrito para a primeira frase */
+}
+
+/* Segunda frase sem negrito dentro do h2 */
+.intro h2 span {
+  font-weight: 400; /* Normal */
+}
+
+/* Subtítulo ou frase menor */
+.intro h3 {
+  font-size: 1.1em; /* Um pouco maior que o texto normal */
+  margin-bottom: 25px; /* Espaço abaixo do subtítulo */
+}
+
+/* Botão da seção introdutória */
+.intro button {
+  background: #761e81; /* Cor de fundo roxa */
+  color: white; /* Texto branco */
+  border: none; /* Remove borda padrão */
+  padding: 15px 25px; /* Espaçamento interno */
+  border-radius: 8px; /* Borda arredondada */
+  cursor: pointer; /* Cursor muda para mãozinha */
+  font-size: 1em; /* Tamanho do texto do botão */
+  transition: background 0.3s; /* Animação suave ao mudar a cor */
+}
+
+/* Hover do botão (quando o mouse passa por cima) */
+.intro button:hover {
+  background: #5a1669; /* Cor roxa mais escura */
+}
+
+/* Container de cursos */
+/* Define um layout flexível para os quadrados de cursos */
+.cursos {
+  display: flex; /* Flexbox para alinhar os cursos */
+  justify-content: center; /* Centraliza horizontalmente */
+  flex-wrap: wrap; /* Permite quebra de linha se não couber em uma linha */
+  gap: 25px; /* Espaçamento entre os quadrados */
+  padding: 40px 20px; /* Espaçamento interno da seção */
+}
+
+/* Quadrado dos cursos */
+.curso {
+  background: white; /* Fundo branco */
+  width: 280px; /* Largura fixa */
+  padding: 25px; /* Espaçamento interno */
+  border-radius: 15px; /* Bordas arredondadas */
+  text-align: center; /* Centraliza o conteúdo */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2); /* Sombra suave */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animação suave ao passar o mouse */
+}
+
+/* Efeito hover no quadrado do curso */
+.curso:hover {
+  transform: translateY(-8px); /* Levanta o quadrado */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3); /* Sombra mais forte */
+}
+
+/* Título dentro do curso */
+.curso h3 {
+  color: #761e81; /* Cor roxa */
+  margin-bottom: 12px; /* Espaço abaixo do título */
+  font-size: 1.3em; /* Tamanho do texto */
+  font-weight: 700; /* Negrito */
+  font-family: 'Poppins', sans-serif; /* Fonte elegante */
+}
+
+/* Descrição do curso */
+.curso p {
+  font-size: 0.95em; /* Um pouco menor que o texto padrão */
+  margin-bottom: 18px; /* Espaço abaixo do parágrafo */
+  line-height: 1.4; /* Altura da linha para facilitar a leitura */
+}
+
+/* Botão dentro do curso */
+.curso button {
+  background: #cc71d8; /* Fundo lilás */
+  color: white; /* Texto branco */
+  border: none; /* Remove borda */
+  padding: 10px 18px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mão */
+  font-size: 1em; /* Tamanho do texto */
+  transition: background 0.3s; /* Suaviza a mudança de cor */
+}
+
+/* Hover do botão do curso */
+.curso button:hover {
+  background: #761e81; /* Cor roxa escura */
+}
+
+/* Container genérico para centralizar conteúdo e limitar largura */
+.container {
+  width: 90%; /* Ocupa 90% da tela */
+  max-width: 1100px; /* Máximo de 1100px */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 40px 0; /* Espaçamento vertical */
+  text-align: center; /* Centraliza textos */
+}
+
+/* Footer (rodapé) */
+footer {
+  background-color: #cc71d8; /* Fundo lilás */
+  color: #f5f5f5; /* Texto claro */
+  text-align: center; /* Centraliza o conteúdo */
+  padding: 20px 0; /* Espaçamento interno */
+  margin-top: auto; /* Faz o footer ir para o final da página */
+  font-size: 15px; /* Tamanho do texto do rodapé */
+}
