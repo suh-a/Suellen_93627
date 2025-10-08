@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eee;
+    margin: 0;
+}
+
+.tabuleiro {
+    width: 480px;
+    height: 480px;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+}
+
+.casa {
+    width: 60px;
+    height: 60px;
+}
+
+.preta {
+    background-color: #000;
+}
+
+.branca {
+    background-color: #fff;
+}

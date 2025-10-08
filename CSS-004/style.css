@@ -1,0 +1,34 @@
+.pai{ 
+    
+    background-color: red; 
+    width: 420px; 
+    height: 420px; 
+    align-items: center; 
+    margin: 20px 0; 
+} 
+.f1{ 
+    
+    background-color: black; 
+    width: 120px; 
+    height: 120px; 
+    position: relative; 
+    /*4 possibilidades 
+        direita 
+        esquerda 
+        encima 
+        embaixo 
+    */ 
+    
+    left: 120px; 
+    top: 50px; 
+    bottom: 90px; 
+    right: 120px; 
+} 
+.f2{ 
+    background-color: blue; 
+    width: 120px; 
+    height: 120px; 
+    position: relative; 
+    left: 200px; 
+    bottom: 120px; 
+}

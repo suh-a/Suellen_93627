@@ -1,0 +1,170 @@
+
+
+/* Reset */
+* {
+  margin: 0;                  /* Remove margens padrão de todos os elementos */
+  padding: 0;                /* Remove espaçamentos internos padrão */
+  box-sizing: border-box;   /* Inclui padding e borda no cálculo do tamanho total */
+}
+
+body {
+  font-family: Arial, sans-serif;     /* Define a fonte padrão do site */
+  line-height: 1.6;                  /* Define espaçamento entre linhas */
+  color: #333;                    /* Cor do texto padrão (cinza escuro) */
+}
+
+/* Cabeçalho */
+header {
+  background: #ff8800;          /* Fundo azul claro */
+  text-align: center;            /* Centraliza conteúdo */
+  padding: 20px 0;              /* Espaçamento interno em cima e embaixo */
+}
+
+header .logo {
+  height: 150px;                /* Altura da logo */
+  display: block;              /* Faz ocupar uma linha inteira */
+  margin: 0 auto 10px;        /* Centraliza horizontalmente */
+}
+
+header nav ul {
+  list-style: none;              /* Remove as bolinhas da lista */
+  display: flex;                /* Coloca os itens em linha */
+  justify-content: center;     /* Centraliza os itens */
+  gap: 40px;                  /* Espaçamento entre links */
+}
+
+header nav ul li a {
+  text-decoration: none;         /* Remove sublinhado */
+  color: #000;                /* Cor preta para os links */
+  font-weight: bold;           /* Negrito */
+  font-size: 18px;            /* Tamanho da fonte */
+}
+
+/* Banner */
+.banner {
+  position: relative;        /* Permite posicionar elementos dentro (como o texto) */
+  width: 100%;              /* Largura total */
+  height: 800px;           /* Altura fixa */
+  overflow: hidden;       /* Esconde parte da imagem que sair da área */
+}
+
+.banner img {
+  width: 100%;                     /* Imagem ocupa toda largura */
+  height: 100%;                   /* E altura */
+  object-fit: cover;             /* Faz a imagem se ajustar sem distorcer */
+  filter: brightness(0.7);      /* Escurece a imagem para destacar o texto */
+}
+
+.texto-banner {
+  position: absolute;                         /* Posiciona por cima da imagem */
+  top: 50%;                                  /* Move 50% para baixo */
+  left: 50%;                                /* Move 50% para direita */
+  transform: translate(-50%, -50%);        /* Centraliza no meio exato */
+  color: white;                         /* Cor do texto */
+  text-align: center;                    /* Texto centralizado */
+  z-index: 1;                           /* Fica por cima da imagem */
+}
+
+.texto-banner h2 {
+  font-size: 2.8em;                       /* Tamanho da fonte grande */
+  text-shadow: 2px 5px #ff7c02;        /* Sombra azul no texto */
+}
+
+/* Seções padrão */
+section {
+  padding: 40px 20px;     /* Espaçamento interno */
+  text-align: center;    /* Texto centralizado */
+}
+
+.sobre h2,
+.contato h1 {
+  color: #fa5c00;       /* Cor azul nos títulos */
+  margin-bottom: 20px;   /* Espaço embaixo */
+}
+
+.sobre p {
+  font-size: 1.1em;       /* Texto um pouco maior */
+  margin-bottom: 20px;   /* Espaço abaixo */
+}
+
+/* Formulário */
+.contato form {
+  display: flex;                                       /* Usa flexbox */
+  flex-direction: column;                             /* Coloca os campos em coluna */
+  gap: 15px;                                         /* Espaço entre os elementos */
+  text-align: left;                                 /* Alinha texto à esquerda */
+  background: #fff;                              /* Fundo branco */
+  padding: 25px;                                  /* Espaçamento interno */
+  border-radius: 10px;                           /* Bordas arredondadas */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);      /* Sombra leve */
+}
+
+.contato label {
+  font-weight: bold;      /* Deixa os rótulos em negrito */
+}
+
+input, textarea {
+  width: 100%;                    /* Campos ocupam toda largura */
+  padding: 12px;                 /* Espaçamento interno */
+  border: 1px solid #ccc;     /* Borda cinza clara */
+  border-radius: 5px;          /* Bordas arredondadas */
+  font-size: 15px;            /* Tamanho da fonte */
+}
+
+/* Tira as bolinhas da lista de serviços */
+.servicos ul {
+  list-style: none;               /* Remove marcadores da lista */
+  padding: 20px;                 /* Espaçamento interno */
+}
+
+/* Botões */
+button, .btn {
+  background-color: #f85306;          /* Fundo azul */
+  border: none;                        /* Remove borda */
+  padding: 12px 20px;                 /* Espaçamento interno */
+  font-size: 16px;                   /* Tamanho da fonte */
+  font-weight: bold;                /* Negrito */
+  cursor: pointer;                 /* Cursor de mãozinha */
+  border-radius: 5px;             /* Bordas arredondadas */
+  transition: background 0.3s;   /* Suaviza mudança de cor */
+}
+
+button:hover, .btn:hover {
+  background-color: #f76815;          /* Azul mais claro no hover */
+}
+
+/* WhatsApp */
+.whatsapp-contato h2 {
+  margin-bottom: 15px;       /* Espaço embaixo */
+  font-size: 1.3em;         /* Tamanho da fonte */
+}
+
+.whatsapp-botao {
+  display: inline-flex;                   /* Flexbox em linha */
+  align-items: center;                   /* Centraliza verticalmente */
+  gap: 10px;                            /* Espaço entre ícone e texto */
+  background: #25D366;               /* Cor verde padrão do WhatsApp */
+  color: white;                     /* Texto branco */
+  font-weight: bold;                 /* Negrito */
+  padding: 12px 20px;               /* Espaçamento interno */
+  border-radius: 8px;              /* Bordas arredondadas */
+  text-decoration: none;          /* Remove sublinhado */
+  transition: 0.3s;              /* Suaviza efeitos */
+}
+
+.whatsapp-botao:hover {
+  background: #1ebe5d;      /* Verde mais escuro no hover */
+}
+
+.whatsapp-botao img {
+  width: 24px;          /* Largura do ícone */
+  height: 24px;        /* Altura do ícone */
+}
+
+/* Rodapé */
+footer {
+  background: #fd8700;          /* Fundo azul */
+  text-align: center;            /* Texto centralizado */
+  padding: 15px;                /* Espaçamento interno */
+  margin-top: 20px;            /* Espaço acima do rodapé */
+}
