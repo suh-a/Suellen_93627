@@ -1,68 +1,69 @@
+/* Remove margens e paddings padrão e usa box-sizing para facilitar o layout */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove padding padrão */
+    box-sizing: border-box; /* Inclui borda e padding no cálculo do tamanho */
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    display: flex; /* Usa flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da tela */
 }
 
 .container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
+    background-color: #fff; /* Fundo branco para o quadro */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 300px; /* Largura fixa */
+    text-align: center; /* Centraliza texto */
 }
 
 h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 24px; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
 }
 
 label {
-    display: block;
-    margin: 10px 0 5px;
+    display: block; /* Ocupa linha inteira */
+    margin: 10px 0 5px; /* Espaço acima e abaixo do label */
 }
 
 input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
+    width: 100%; /* Ocupa toda a largura do container */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaço abaixo do input */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: blueviolet;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    width: 100%; /* Botão ocupa toda a largura */
+    padding: 10px; /* Espaçamento interno */
+    background-color: blueviolet; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de mãozinha */
 }
 
 button:hover {
-    background-color: darkviolet;
+    background-color: darkviolet; /* Cor ao passar o mouse */
 }
 
 .result {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
+    margin-top: 20px; /* Espaço acima do resultado */
+    font-size: 18px; /* Tamanho do texto do resultado */
+    font-weight: bold; /* Negrito */
 }
 
 .result span {
-    color: purple
+    color: purple; /* Cor do valor do resultado */
 }
 

@@ -1,28 +1,42 @@
+<!-- Declaração do tipo de documento HTML -->
 <!DOCTYPE html>
+<!-- Início do documento HTML -->
 <html lang="en">
 <head>
+    <!-- Define a codificação de caracteres -->
     <meta charset="UTF-8">
+    <!-- Define a responsividade para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba do navegador -->
     <title>Calculadora Simples</title>
+    <!-- Importa o arquivo de estilos CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class = "container">
+    <!-- Container principal da calculadora -->
+    <div class="container">
+        <!-- Título da calculadora -->
         <h1>Calculadora Simples</h1>
+        <!-- Formulário para entrada dos números -->
         <form id="calculadora-form">
+            <!-- Campo para o primeiro número -->
             <label for="num1">Número 1:</label>
             <input type="number" id="num1" name="num1" required>
 
+            <!-- Campo para o segundo número -->
             <label for="num2">Número 2:</label>
             <input type="number" id="num2" name="num2" required>
 
+            <!-- Botão para calcular -->
             <button type="submit">Calcular</button>
         </form>
+        <!-- Área onde o resultado será exibido -->
         <div class="result">
             <h3>Resultado: <span id="result"></span></h3>
         </div>
     </div>
 
+    <!-- Importa o script JavaScript da calculadora -->
     <script src="script.js"></script>
     
 </body>
