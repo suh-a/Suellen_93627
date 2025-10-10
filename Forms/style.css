@@ -1,0 +1,111 @@
+
+/*
+    Define o estilo global do corpo da página:
+    - Fonte padrão
+    - Cor de fundo suave
+    - Remove margens e preenchimento
+    - Centraliza o conteúdo vertical e horizontalmente
+*/
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+/*
+    Estiliza o formulário:
+    - Define largura máxima e centraliza
+    - Adiciona preenchimento, fundo branco, bordas arredondadas e sombra
+    - Usa flexbox para layout em coluna e espaçamento entre elementos
+*/
+form {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 32px 28px 28px 28px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 6px 32px rgba(0, 0, 0, 0.18);
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+}
+
+/*
+    Estiliza os rótulos dos campos do formulário:
+    - Exibe em bloco, negrito e com espaçamento entre letras
+*/
+label {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: bold;
+        letter-spacing: 1px;
+}
+
+/*
+    Estiliza os campos de texto, senha e textarea:
+    - Largura total, altura fixa, padding interno
+    - Bordas arredondadas e cor de fundo suave
+    - Transição suave ao focar
+*/
+input[type="text"],
+input[type="password"],
+textarea {
+        width: 100%;
+        height: 44px;
+        padding: 0 14px;
+        margin-bottom: 0;
+        border: 1.5px solid #e0e0e0;
+        border-radius: 7px;
+        font-size: 1.05rem;
+        background: #f8f8f8;
+        transition: border 0.2s, box-shadow 0.2s;
+        box-sizing: border-box;
+        color: #222;
+}
+
+
+/*
+    Destaca o campo ao receber foco:
+    - Borda e sombra em tom turquesa
+    - Fundo branco
+*/
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+        border: 1.5px solid #1de9b6;
+        outline: none;
+        background: #fff;
+        box-shadow: 0 0 0 2px #1de9b633;
+}
+
+/*
+    Estiliza o botão de envio:
+    - Fundo turquesa, texto branco, sem borda
+    - Padding, bordas arredondadas, cursor pointer
+    - Transição de cor ao passar o mouse
+*/
+button {
+        background: #1de9b6;
+        color: white;
+        border: none;
+        padding: 12px 0;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: background 0.2s;
+}
+
+/*
+    Altera a cor do botão ao passar o mouse
+*/
+button:hover {
+        background: #13bfa6;
+}

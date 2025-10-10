@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!-- Define a codificação de caracteres e responsividade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Forms</title>
+    <!-- Importa o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container para centralizar o formulário na tela -->
+    <div class="form-container">
+        <!-- Formulário principal. O evento onsubmit chama a função de validação em script.js -->
+        <form id="simpleForm" onsubmit="return validarFormulario()">
+            <!-- Campo para o nome do usuário -->
+            <label for="nome"><strong>NOME</strong></label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+            <!-- Campo para o email do usuário -->
+            <label for="email"><strong>EMAIL</strong></label>
+            <input type="text" id="email" name="email" placeholder="Digite seu email">
+
+            <!-- Campo para o telefone do usuário -->
+            <label for="telefone"><strong>TELEFONE</strong></label>
+            <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone">
+
+            <!-- Campo para a senha do usuário -->
+            <label for="senha"><strong>SENHA</strong></label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+            <!-- Campo para confirmação da senha -->
+            <label for="confirmarSenha"><strong>CONFIRMAR SENHA</strong></label>
+            <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha">
+
+            <!-- Área para exibir mensagens de erro de validação -->
+            <div id="mensagem-erro" style="display:none;color:#d32f2f;font-weight:bold;margin-bottom:10px;"></div>
+
+            <!-- Área para exibir mensagens de erro de validação -->
+            <div id="mensagem-sucesso" style="display:none;color:#388e3c;font-weight:bold;margin-bottom:10px;"></div>
+
+            <!-- Botão de envio do formulário -->
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <!-- Importa o script de validação do formulário -->
+    <script src="script.js"></script>
+</body>
+</html>
