@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ocupa a tela toda */
+  background-color: #111;
+}
+
+.calculadora {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+.display {
+  background-color: #000;
+  color: rgb(236, 164, 7);
+  font-size: 2em;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px; 
+  min-height: 40px;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 60px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.numero, .ponto {
+  background-color: #444;
+  color: white;
+}
+
+.operador {
+  background-color: #ff9500;
+  color: white;
+}
+
+.igual {
+  background-color: rgb(255, 68, 0);
+  color: white;
+}
+
+.limpar {
+  background-color: #444;
+  color: white;
+}
+
+button:hover {
+  background-color: #666;
+}
