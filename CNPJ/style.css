@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    display: flex; /* Usa flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da tela */
+}
+
+.container {
+    background-color: #ffffff; /* Fundo branco para o container */
+    padding: 40px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h1 {
+    font-size: 26px; /* Tamanho da fonte do título */
+    margin-bottom: 25px; /* Espaçamento abaixo do título */
+}
+form {
+    display: flex; /* Usa flexbox para o formulário */
+    flex-direction: column; /* Coloca os elementos em coluna */
+}
+ 
+label {
+    margin-bottom: 12px; /* Espaçamento abaixo do rótulo */
+}
+
+input[type="text"] {
+    padding: 12px; /* Espaçamento interno do campo de texto */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 6px; /* Bordas arredondadas */
+    margin-bottom: 15px; /* Espaçamento abaixo do campo de texto */
+}
+
+button {
+    padding: 12px; /* Espaçamento interno do botão */
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 6px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor de fundo azul escuro ao passar o mouse */
+}
+
+.result {
+    font-size: 16px;
+    margin-top: 25px; /* Espaçamento acima da seção de resultados */
+}
+ 
