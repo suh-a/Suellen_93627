@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Móveis do Lar</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="hero">
+            <div class="hero-inner container">
+                <h1>Móveis do Lar</h1>
+                <p>Qualidade e estilo para o seu lar em Feira de Santana</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="intro">
+                <div class="container">
+                    <div class="intro-grid">
+                        <div class="intro-text">
+                            <h2>Bem-vindo à nossa loja</h2>
+                            <p>
+                                Na Móveis do Lar você encontra móveis de madeira, design,
+                                conforto e durabilidade. Estamos em Feira de Santana e prontos
+                                para atender você.
+                            </p>
+                        </div>
+                        <div class="intro-image">
+                            <img src="img/img1.jpg" alt="Móveis de madeira" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="destaques">
+                <div class="container">
+                    <h2>Nossos Destaques</h2>
+                    <hr />
+                    <div class="cards">
+                                <article class="card">
+                                    <div class="img-wrap">
+                                        <img src="img/img3.jpg" alt="Sofá de Madeira Maciça" />
+                                    </div>
+                                    <h3>Sofá de Madeira Maciça</h3>
+                                    <p>Elegância em madeira maciça para sua sala.</p>
+                                </article>
+
+                                <article class="card">
+                                    <div class="img-wrap">
+                                        <img src="img/img2.jpg" alt="Mesa de Jantar 6 Lugares" />
+                                    </div>
+                                    <h3>Mesa de Jantar 6 Lugares</h3>
+                                    <p>Conforto para reunir a família com estilo.</p>
+                                </article>
+
+                                <article class="card">
+                                    <div class="img-wrap">
+                                        <img src="img/img4.jpg" alt="Estante Design em Madeira" />
+                                    </div>
+                                    <h3>Estante Design em Madeira</h3>
+                                    <p>Funcionalidade e beleza para sua sala ou escritório.</p>
+                                </article>
+                </div>
+            </section>
+
+            <section class="contato">
+                <div class="container">
+                    <h2>Contato</h2>
+                    <p class="contato-desc">Entre em contato conosco ou fale direto pelo WhatsApp.</p>
+
+                    <div class="contato-card">
+                        <form id="contato-form" action="/submit" method="POST">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" required />
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required />
+
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                            <button type="submit" class="btn">Enviar Mensagem</button>
+                        </form>
+
+                        <div class="contato-side">
+                            <p class="whatsapp">Ou fale diretamente no WhatsApp:</p>
+                            <a class="whatsapp-btn" href="https://web.whatsapp.com/" target="_blank">
+                                <img src="img/logo-whatsapp.jpg" alt="WhatsApp" />
+                                <span>(WhatsApp)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Móveis do Lar – Feira de Santana, BA.</p>
+        </div>
+    </footer>
+</html>
