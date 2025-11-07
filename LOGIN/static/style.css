@@ -1,0 +1,145 @@
+/* =========================
+   ESTILO GERAL
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #003366, #0055aa);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 800px;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+h1 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+/* =========================
+   FORMULÁRIOS
+========================= */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+label {
+  color: #003366;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #0055aa;
+  box-shadow: 0 0 5px rgba(0, 85, 170, 0.3);
+  outline: none;
+}
+
+/* =========================
+   BOTÕES E LINKS
+========================= */
+button, .botao {
+  background-color: #003366;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .botao:hover {
+  background-color: #0055aa;
+  transform: scale(1.03);
+}
+
+/* =========================
+   TABELA DE PRODUTOS
+========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #003366;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e6f0ff;
+}
+
+/* =========================
+   AJUSTES ESPECÍFICOS POR PÁGINA
+========================= */
+body.index { /* Página de Login */
+  background: linear-gradient(135deg, #00264d, #004c99);
+}
+
+body.cadastrar { /* Página de Cadastro */
+  background: linear-gradient(135deg, #004080, #0077cc);
+}
+
+body.produtos { /* Página de Produtos */
+  background: linear-gradient(135deg, #003366, #0099cc);
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button, .botao {
+    font-size: 14px;
+  }
+}
