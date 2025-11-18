@@ -3,7 +3,7 @@
 ========================= */
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #003366, #0055aa);
+  background: linear-gradient(135deg, #ff004c, #fa7da2);
   margin: 0;
   padding: 0;
   display: flex;
@@ -26,7 +26,7 @@ body {
 ========================= */
 h1 {
   text-align: center;
-  color: #003366;
+  color: #ff004c;
   margin-bottom: 25px;
   font-size: 26px;
 }
@@ -41,7 +41,7 @@ form {
 }
 
 label {
-  color: #003366;
+  color: #ff004c;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -56,7 +56,7 @@ input {
 }
 
 input:focus {
-  border-color: #0055aa;
+  border-color: #fa7da2;
   box-shadow: 0 0 5px rgba(0, 85, 170, 0.3);
   outline: none;
 }
@@ -65,7 +65,7 @@ input:focus {
    BOTÕES E LINKS
 ========================= */
 button, .botao {
-  background-color: #003366;
+  background-color: #ff004c;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -79,7 +79,7 @@ button, .botao {
 }
 
 button:hover, .botao:hover {
-  background-color: #0055aa;
+  background-color: #ff004c;
   transform: scale(1.03);
 }
 
@@ -99,7 +99,7 @@ th, td {
 }
 
 th {
-  background-color: #003366;
+  background-color: #ff004c;
   color: white;
 }
 
@@ -115,15 +115,15 @@ tr:hover {
    AJUSTES ESPECÍFICOS POR PÁGINA
 ========================= */
 body.index { /* Página de Login */
-  background: linear-gradient(135deg, #00264d, #004c99);
+  background: linear-gradient(135deg, #ff004c, #fa7da2);
 }
 
 body.cadastrar { /* Página de Cadastro */
-  background: linear-gradient(135deg, #004080, #0077cc);
+  background: linear-gradient(135deg, #ff004c, #fa7da2);
 }
 
 body.produtos { /* Página de Produtos */
-  background: linear-gradient(135deg, #003366, #0099cc);
+  background: linear-gradient(135deg, #ff004c, #fa7da2);
 }
 
 /* =========================

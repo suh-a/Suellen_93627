@@ -1,6 +1,6 @@
 // Valida se os campos estão preenchidos
 function validarLogin() {
-  const nome = document.getElementById("nome").value;
+  const usuario = document.getElementById("usuario").value;
   const email = document.getElementById("email").value;
   const senha = document.getElementById("senha").value;
 
